@@ -1,0 +1,27 @@
+/*
+    1
+   333
+  55555
+ 7777777
+999999999
+*/
+
+class Pattern141
+{
+	public static void main(String args[])
+	{
+		int n=5;
+		for(int i=1;i<=n;i++)
+		{
+			for(int j=n;j>i;j--)
+			{
+				System.out.print(" ");
+			}
+			for(int k=1;k<=((2*i)-1);k++)
+			{
+				System.out.print((2*i)-1);
+			}
+			System.out.println();
+		}
+	}
+}
