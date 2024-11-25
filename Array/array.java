@@ -21,6 +21,8 @@ Ans. A 2D array (two-dimensional array) in Java is an array of arrays. It is oft
 Ans. To declare a 2D array in Java, you specify the data type, followed by two sets of square brackets [][], and then the array's name. You can declare it with or without specifying the size initially.
 9. How do you access an element in a 2D array?
 Ans. In Java, you can access an element in a 2D array using its row index and column index. The syntax to access an element is:arrayName[rowIndex][columnIndex].
+12. How do you initialize an array in Java?
+Ans. The assigning of values in an array is called initilization of an array in java.
 15. How do you find the length of an array in Java?
 Ans. In Java, you can find the length of an array using the .length property. This property provides the number of elements in the array. It's important to note that length is a property of the array object, not a method, so you do not use parentheses when accessing it.
 */
