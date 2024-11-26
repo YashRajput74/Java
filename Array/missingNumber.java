@@ -1,7 +1,5 @@
 /*
-
 1. Find the missing number in an array
-
 Given an array of integers from 1 to 100, find the missing number.
 */
 import java.util.Arrays;

@@ -35,10 +35,44 @@ class ThisKeyword
 }
 */
 
+
 /*
-In the above code if we run the program we will find that the values in show method are not assigned and 0, null, 0, and Google are printed.
+In the above code if we run the program we will find that the values in show method are assignedto default that is 0, null, 0, and Google are printed.
 Why? because the global variable and local variables are same now this is data shadowing. because the compiler gives priority to local variable.
 */
+
+
+/*
+class ThisKeyword {
+    int id;
+    String name;
+    int Salary;
+    static String cname = "Google"; // Static variable, common across all instances
+
+    // The get method accepts 'ThisKeyword google', which refers to the object passed.
+    void get(int id, String name, int Salary, ThisKeyword google) {
+        google.id = id;
+        google.name = name;
+        google.Salary = Salary;
+    }
+
+    // Method to display instance variables and static variable
+    void show() {
+        System.out.println(id);
+        System.out.println(name);
+        System.out.println(Salary);
+        System.out.println(cname);  // This will print "Google" for all instances
+    }
+
+    public static void main(String args[]) {
+        ThisKeyword emp1 = new ThisKeyword();   // Creating the object
+        emp1.get(101, "Vijay", 450, emp1);      // Passing the object to the 'get' method
+        emp1.show();                            // Displaying the values
+    }
+}
+
+*/
+
 class ThisKeyword
 {
 	int id;
